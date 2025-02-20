@@ -19,8 +19,8 @@ exports.enrichResume = async (req, res) => {
     const { raw_text } = req.body;
     if (!raw_text) return res.status(404).json({ error: 'No data detected in raw text' });
 
-    console.log('Processing resume...');
-    console.log('Calling Gemini API...', process.env.GEMINI_API_KEY);
+    // console.log('Processing resume...');
+    // console.log('Calling Gemini API...', process.env.GEMINI_API_KEY);
 
     try {
         const schema = {
